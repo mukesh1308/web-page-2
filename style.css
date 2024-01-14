@@ -1,0 +1,143 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: sans-serif;
+}
+html{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+:root{
+    --primary: #14AE7C;
+    --accert: #3E8BCD;
+    --text: #ffffff;
+}
+
+nav{
+    width:100vw;
+    height: 5rem;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h1{
+    color: var(--text);
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-left: 2rem;
+}
+nav ul{
+    width: fit-content;
+    height: fit-content;
+    margin-right: 2rem;
+}
+nav li{
+    display: inline-block;
+    color: var(--text);
+    margin: auto 1rem;
+    font-size: 1rem;
+}
+
+main{
+    width: 100%;
+}
+main header{
+    width: 100%;
+    height: calc(100vh - 5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main header button{
+    height: fit-content;
+    padding: 0.5rem 1rem;
+    background-color: var(--accert);
+    color: var(--text);
+    border: none;
+    font-weight: 200;
+}
+
+main .about{
+    width: 100%;
+    height: fit-content;
+    background-color: var(--primary);
+    padding: 2rem;
+    color: var(--text);
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main .about h1{
+    font-size: 1.5rem;
+}
+main .about p{
+    font-size: 0.7rem;
+}
+
+main .team{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main .team .team-tital{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+}
+main .team .team-tital h2{
+    font-weight: 150;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+}
+main .team .team-tital p{
+    width: 70%;
+    font-weight: 150;
+    font-size: 0.8rem;
+}
+
+
+
+main .team .cards{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+main .team .cards p{
+    width: 15rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+main .team .cards p:nth-child(1){
+    background-color: #F3E0E1;
+    color: #c2a0a1;
+}
+main .team .cards p:nth-child(2){
+    background-color: #E1F1DC;
+    color: #9aaf99;
+}
+main .team .cards p:nth-child(3){
+    background-color: #FDF7E5;
+    color: #a39d8a;
+}
+main .team .cards p:nth-child(4){
+    background-color: #DCEEF8;
+    color: #8ba2ae;
+}
